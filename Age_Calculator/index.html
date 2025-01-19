@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css"
+    />
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+      <h1 class="text-2xl font-semibold text-gray-800 text-center mb-6">
+        Age Calculator
+      </h1>
+      <form id="age-form" class="space-y-4">
+        <input
+          type="text"
+          id="birthdate"
+          placeholder="Enter your birthdate"
+          autocomplete="off"
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 focus:outline-none"
+        />
+        <button
+          type="submit"
+          class="w-full bg-gray-800 text-white py-2 rounded-lg hover:bg-gray-700 transition"
+        >
+          Calculate
+        </button>
+      </form>
+      <div id="result" class="mt-4 text-lg text-center text-gray-700"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/3.3.0/luxon.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
